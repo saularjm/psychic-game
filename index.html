@@ -4,25 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psychic Game</title>
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
 </head>
 <body>
-    <!--Game title-->
-    <header><h1>Psychic Game!</h1></header>
+     
+    <!--Container for jumbotron-->
+    <div class="container">
+        
+        <!--Jumbotron-->
+        <div class="jumbotron mt-5">
 
-    <!--Directions-->
-    <p><strong>Guess what letter I'm thinking of!</strong></p>
-    
-    <!--Win counter-->
-    <p>Wins: <span id="wins"></span></p>
+            <!--Game title-->
+            <header><h1>Psychic Game!</h1></header>
 
-    <!--Loss counter-->
-    <p>Losses: <span id="losses"></span></p>
+            <!--Directions-->
+            <p><strong>Guess what letter I'm thinking of!</strong></p>
+            <hr/>
+            
+            <!--Win counter-->
+            <p>Wins: <span id="wins"></span></p>
 
-    <!--Guesses left-->
-    <p>Number of guesses left: <span id="guessCount"></span></p>
+            <!--Loss counter-->
+            <p>Losses: <span id="losses"></span></p>
 
-    <!--Previous guesses-->
-    <p>Your guesses so far: <span id="guesses"></span></p>
+            <!--Guesses left-->
+            <p>Number of guesses left: <span id="guessCount"></span></p>
+
+            <!--Previous guesses-->
+            <p>Your guesses so far: <span id="guesses"></span></p>
+
+        </div>
+    </div>
 
     <!--JS link-->
     <script src="assets/javascript/game.js"></script>
