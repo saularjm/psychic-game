@@ -20,6 +20,7 @@ document.onkeyup = function(event) {
 
     // Random computer choice
     var comp = letters[Math.floor(Math.random() * letters.length)];
+    console.log(comp);
 
     // Display results and increment counters
     if (userGuess === comp) {
@@ -29,7 +30,7 @@ document.onkeyup = function(event) {
         document.getElementById("guessCount").innerHTML = guessCount;
         guesses = "";
         document.getElementById("guesses").innerHTML = guesses;
-        // INSERT CODE HERE FOR RELOAD
+        count = 0;
     }
 
     else if (userGuess !== comp) {
@@ -46,7 +47,7 @@ document.onkeyup = function(event) {
             document.getElementById("guessCount").innerHTML = guessCount;
             guesses = "";
             document.getElementById("guesses").innerHTML = guesses;
-            // INSERT CODE HERE FOR RELOAD
+            count = 0;
         }
         
     }
