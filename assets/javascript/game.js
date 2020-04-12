@@ -1,6 +1,10 @@
 // Array for computer options
 var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
+// Random computer choice
+var comp = letters[Math.floor(Math.random() * letters.length)];
+console.log(comp);
+
 // Variables for counters
 var wins = 0;
 var losses = 0;
@@ -18,10 +22,6 @@ document.onkeyup = function(event) {
     // User guess
     var userGuess = event.key;
 
-    // Random computer choice
-    var comp = letters[Math.floor(Math.random() * letters.length)];
-    console.log(comp);
-
     // Display results and increment counters
     if (userGuess === comp) {
         wins++;
@@ -31,6 +31,8 @@ document.onkeyup = function(event) {
         guesses = "";
         document.getElementById("guesses").innerHTML = guesses;
         count = 0;
+        comp = letters[Math.floor(Math.random() * letters.length)];
+        console.log(comp);
     }
 
     else if (userGuess !== comp) {
@@ -48,6 +50,8 @@ document.onkeyup = function(event) {
             guesses = "";
             document.getElementById("guesses").innerHTML = guesses;
             count = 0;
+            comp = letters[Math.floor(Math.random() * letters.length)];
+            console.log(comp);
         }
         
     }
