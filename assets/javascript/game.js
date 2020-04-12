@@ -8,6 +8,10 @@ var guessCount = 9;
 var guesses = "";
 var count = 0;
 
+document.getElementById("wins").innerHTML = wins;
+document.getElementById("losses").innerHTML = losses;
+document.getElementById("guessCount").innerHTML = guessCount;
+
 // Function for gameplay
 document.onkeyup = function(event) {
 
@@ -29,13 +33,13 @@ document.onkeyup = function(event) {
     }
 
     else if (userGuess !== comp) {
-        if (count < 9) {
-            document.getElementById("guesses").innerHTML += userGuess;
+        if (count < 8) {
+            document.getElementById("guesses").innerHTML += userGuess + "  ";
             guessCount--;
             document.getElementById("guessCount").innerHTML = guessCount;
             count++;
         }
-        else if (count === 9) {
+        else if (count === 8) {
             losses++;
             document.getElementById("losses").innerHTML = losses;
             guessCount = 9;
